@@ -131,3 +131,27 @@ li {
   text-transform: uppercase;
   font-family: 'Share', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: justify;
+}
+
+.section1 {
+  background-color: rgb(243, 210, 20);
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  font-family: 'Share', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.icon1 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+  align-items: center;
+  justify-items: center;
+}
+
+
