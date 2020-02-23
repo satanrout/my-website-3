@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -112,8 +113,8 @@ li {
   cursor: pointer;
 }
 
-.section2 {
-  background-color: orange;
+#section2 {
+  background-color: rgb(73, 168, 73);
   padding: 20px 50px;
 }
 
@@ -146,12 +147,80 @@ li {
   color: white;
 }
 
-.icon1 {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  padding-bottom: 20px;
 }
 
+.facebook:hover, .linkedin:hover, .github:hover, .twitter:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
 
+.icon {
+  padding: 15px;
+  margin: 10px;
+  background-color: rgb(107, 107, 25);
+  border-radius: 10px;
+}
+
+#section3 {
+  background-color: #8979AD;
+  padding: 20px 50px;
+}
+
+.me {
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-size: 2em;
+  font-family: 'Share', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.para {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-family: 'Share', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+}
+
+footer {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: yellowgreen;
+  font-family: 'Share', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(19, 160, 78);
+    font-size: 0.7em;
+  }
+  .nav-links {
+    display: none;
+  }
+  .content {
+    font-size: 4em;
+  }
+  .myself {
+    font-size: 1.2em;
+  }
+  #section2 {
+    padding: 20px;
+  }
+  .intro {
+    font-size: 1.4em;
+  }
+  #section3 {
+    padding: 20px;
+  }
+}
